@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Css Grid Layout</title>
+    <style>
+        body{
+            background: #FFF6AA;
+            font-size: 22px;
+            font-weight: 700;
+            text-align: center;
+            margin:20px 20px;
+            color: #fff;
+            text-transform: uppercase;
+            font-family: 'Courier New', Courier, monospace;
+            letter-spacing: 5px;
+}
+        .header{
+            background: #12D79A;
+            padding: 10px 0;
+}
+        .menu{
+            background: #FFD359;
+            padding: 10px 0;
+}
+        .content{
+            background-color: #F83562;
+            padding: 10px 0;
+}
+        .footer{
+            background-color: #077DAD;
+            padding: 10px 0;
+}
+        .container{
+            height: 100vh;
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            grid-template-rows: 50px 1fr 50px;
+          /* if you want visual desing */
+          grid-template-areas: 
+            " h  h  h  h  h  h  h  h  h  h  h  h "
+            " m  m  m  m  c  c  c  c  c  c  c  c "
+            " f    f    f    f    f   f  f  f  f  f  f  f "
+          ;
+}
+
+
+
+        .header{
+          grid-area: h;
+            /* grid-column: 1/-1; */
+}
+        .menu{
+          grid-area: m;
+          /* grid-column: 1/ 5; */
+}
+        .content{
+          grid-area: c;
+           /* grid-column: 5/-1; */
+}
+        .footer{
+          grid-area: f;
+            /* grid-column: 1/-1; */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </style>
+  </head>
+  <body>
+
+<div class="container">
+  <div class="header">Header</div>
+  <div class="menu">Menu</div>
+  <div class="content">Content</div>
+  <div class="footer">Footer</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </body>
+</html>

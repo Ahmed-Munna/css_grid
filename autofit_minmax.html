@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Css Grid Layout</title>
+    <style>
+        body{
+            background: #FFF6AA;
+            font-size: 22px;
+            font-weight: 700;
+            text-align: center;
+            margin:20px 20px;
+            color: #fff;
+            text-transform: uppercase;
+            font-family: 'Courier New', Courier, monospace;
+            letter-spacing: 5px;
+}
+       .a,.d,.g,.j{
+           padding: 20px;
+            background: #12D79A;
+       }
+       .b,.e,.h{
+           padding: 20px;
+            background: #F83562;
+       }
+       .c,.f,.i{
+           padding: 20px;
+            background: #FFD359;
+       }
+        .container{
+             height: 1000px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit , minmax(100px,1fr));
+            grid-template-rows: repeat(2, 1fr);
+            grid-auto-rows: 1fr;
+            justify-content: right;
+            align-content: center;
+            
+}
+
+
+
+
+
+
+
+    </style>
+  </head>
+  <body>
+
+<div class="container">
+  <div class="a">1</div>
+  <div class="b">2</div>
+  <div class="c">3</div>
+  <div class="d">4</div>
+  <div class="e">5</div>
+  <div class="f">6</div>
+  <div class="g">7</div>
+  <div class="h">8</div>
+  <div class="i">9</div>
+  <div class="j">10</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </body>
+</html>

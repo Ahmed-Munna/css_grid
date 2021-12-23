@@ -1,0 +1,35 @@
+body{
+  background: #FFF6AA;
+  font-size: 22px;
+  font-weight: 700;
+  text-align: center;
+  margin:20px 20px;
+  color: #fff;
+}
+.even{
+  background: #12D79A;
+  padding: 10px 0;
+}
+.odd{
+  background: #FFD359;
+  padding: 10px 0;
+}
+
+.container{
+      display: grid;
+
+      /* shotr system */
+      grid-template: 2fr 1fr 1fr / 2fr 2fr;
+      /*
+          grid-template-columns: 2fr 2fr;
+          grid-auto-rows: 2fr 1fr 1fr;
+          grid-template-columns: auto auto auto;
+          grid-template-rows: 100px 100px;
+
+          grid gap between two rows and columns
+                  **************************
+          grid-column-gap: 5px;
+          grid-row-gap: 2px; */
+      grid-gap: 5px;
+      
+    }
